@@ -1,4 +1,4 @@
-// ===== HOME PAGE JS — home.js =====
+// HOME PAGE JS — home.js
 
 const nameEl = document.getElementById('typedName');
 const fullName = 'Choleen Budiao';
