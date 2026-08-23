@@ -1,4 +1,4 @@
-/* ===== SKILLS — skills.css ===== */
+/* SKILLS — skills.css */
 
 .skills { background: var(--bg2); }
 
@@ -35,7 +35,7 @@
 
 .skill-cards { display: flex; flex-wrap: wrap; gap: 12px; }
 
-/* ===== SKILL CARD WITH TOOLTIP ===== */
+/* SKILL CARD WITH TOOLTIP */
 .skill-card {
   position: relative;
   display: flex;
