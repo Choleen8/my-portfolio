@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
   updateActiveNav();
 });
 
-// ===== ACTIVE NAV BASED ON SCROLL =====
+// ACTIVE NAV BASED ON SCROLL
 function updateActiveNav() {
   const sections = document.querySelectorAll('section');
   let current = 'home';
