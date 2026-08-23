@@ -1,5 +1,4 @@
-/* ===== SHARED STYLES — style.css ===== */
-/* Ginagamit ng LAHAT ng pages */
+/* SHARED STYLES — style.css */
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -28,7 +27,7 @@ a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 .gold { color: var(--gold); }
 
-/* ===== SHARED BUTTONS ===== */
+/* SHARED BUTTONS */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -63,7 +62,7 @@ img { max-width: 100%; display: block; }
 }
 .btn-outline:hover { background: rgba(245,197,24,0.1); transform: translateY(-2px); }
 
-/* ===== SHARED NAVBAR ===== */
+/* SHARED NAVBAR */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -132,7 +131,7 @@ img { max-width: 100%; display: block; }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ===== SHARED SECTION STYLES ===== */
+/* SHARED SECTION STYLES */
 .section-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -163,7 +162,7 @@ img { max-width: 100%; display: block; }
   border-radius: 2px;
 }
 
-/* ===== SHARED ANIMATIONS ===== */
+/* SHARED ANIMATIONS */
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
@@ -173,7 +172,7 @@ img { max-width: 100%; display: block; }
 .delay-2 { transition-delay: 0.2s; }
 .delay-3 { transition-delay: 0.3s; }
 
-/* ===== BACK TO TOP ===== */
+/* BACK TO TOP */
 .back-to-top {
   position: fixed;
   bottom: 28px; right: 28px;
@@ -193,7 +192,7 @@ img { max-width: 100%; display: block; }
 .back-to-top.show { opacity: 1; visibility: visible; }
 .back-to-top:hover { background: var(--gold-dark); transform: translateY(-3px); }
 
-/* ===== RESPONSIVE NAVBAR ===== */
+/* RESPONSIVE NAVBAR */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -209,7 +208,7 @@ img { max-width: 100%; display: block; }
   .hamburger { display: flex; }
 }
 
-/* ===== PAGE TRANSITION ===== */
+/* PAGE TRANSITION */
 body.page-transition {
   opacity: 0;
   transition: opacity 0.35s ease;
@@ -219,7 +218,7 @@ body.page-transition.loaded {
 }
 
 
-/* ===== SECTION DIVIDERS ===== */
+/* SECTION DIVIDERS */
 section + section {
   position: relative;
 }
