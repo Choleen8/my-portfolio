@@ -1,0 +1,106 @@
+/* ===== SKILLS — skills.css ===== */
+
+.skills { background: var(--bg2); }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.skill-category {
+  background: var(--card-bg);
+  border: 1px solid var(--steel);
+  border-radius: 14px;
+  padding: 28px;
+  transition: border-color 0.3s;
+}
+.skill-category:hover { border-color: var(--gold); }
+
+.skill-category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--steel);
+}
+.skill-category-header i { color: var(--gold); font-size: 18px; }
+.skill-category-header h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.skill-cards { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* ===== SKILL CARD WITH TOOLTIP ===== */
+.skill-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg);
+  border: 1px solid var(--steel);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: var(--muted);
+  transition: all 0.3s;
+  cursor: default;
+}
+.skill-card:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-4px);
+}
+.skill-icon { color: var(--gold); font-size: 18px; }
+
+/* Tooltip bubble */
+.skill-card::after {
+  content: attr(data-percent);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  background: var(--gold);
+  color: var(--bg);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  padding: 5px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Tooltip arrow */
+.skill-card::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  border: 6px solid transparent;
+  border-top-color: var(--gold);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Show on hover */
+.skill-card:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+.skill-card:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+@media (max-width: 768px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
