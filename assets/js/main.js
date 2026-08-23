@@ -1,6 +1,6 @@
-// ===== SHARED JS — main.js =====
+//  SHARED JS — main.js
 
-// ===== NAVBAR SCROLL =====
+//  NAVBAR SCROLL
 const navbar = document.getElementById('navbar');
 const backToTop = document.getElementById('backToTop');
 
@@ -40,14 +40,14 @@ window.addEventListener('load', () => {
   updateActiveNav();
 });
 
-// ===== BACK TO TOP =====
+// BACK TO TOP
 if (backToTop) {
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
 
-// ===== HAMBURGER MENU =====
+// HAMBURGER MENU 
 const hamburger = document.getElementById('hamburger');
 const navLinksContainer = document.getElementById('navLinks');
 
@@ -64,7 +64,7 @@ if (hamburger) {
   });
 }
 
-// ===== FADE-UP ANIMATION =====
+// FADE-UP ANIMATION
 const fadeElements = document.querySelectorAll('.fade-up');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
