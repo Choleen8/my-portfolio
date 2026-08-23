@@ -1,8 +1,4 @@
-// ===== CONTACT FORM — contact.js =====
-//
-// TODO: palitan ang 3 values na 'to base sa EmailJS dashboard mo
-// (Account > General para sa PUBLIC_KEY, Email Services para sa SERVICE_ID,
-// Email Templates para sa TEMPLATE_ID)
+//  CONTACT FORM — contact.js
 const EMAILJS_PUBLIC_KEY = "NIMHT_eb_FW-rYZoR";
 const EMAILJS_SERVICE_ID = "service_kuzb5vv";
 const EMAILJS_TEMPLATE_ID = "template_dbt5k9d";
