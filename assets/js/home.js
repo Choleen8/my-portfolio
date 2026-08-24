@@ -11,6 +11,9 @@ function typeName() {
     index++;
 
     setTimeout(typeName, 100);
+  } else {
+    // Typing finished — stop and hide the cursor
+    nameEl.classList.add('done');
   }
 }
 
