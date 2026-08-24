@@ -3,19 +3,15 @@
 const nameEl = document.getElementById('typedName');
 const fullName = 'Choleen Budiao';
 
+let index = 0;
+
 function typeName() {
-  let index = 0;
-  nameEl.textContent = '';
+  if (index < fullName.length) {
+    nameEl.textContent += fullName.charAt(index);
+    index++;
 
-  function type() {
-    if (index < fullName.length) {
-      nameEl.textContent += fullName.charAt(index);
-      index++;
-      setTimeout(type, 100);
-    }
+    setTimeout(typeName, 100);
   }
-
-  type();
 }
 
 window.addEventListener('load', () => {
